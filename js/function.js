@@ -6,10 +6,12 @@ function carregar() {
 
     var msg = document.getElementById('msg');
     var img = document.getElementById('img');
+    var link = document.getElementById('link');
 
     msg.innerHTML = `Agora são ${hora}:${minutos}`;
 
     document.body.style.color = '#3d3d3d'
+    link.style.color = '#3d3d3d'
 
     if (hora >= 6 && hora < 12) {
         //BOM DIA
@@ -24,7 +26,7 @@ function carregar() {
         img.src = 'images/noite.png'
         document.body.style.backgroundColor = '#0d2b2d'
         document.body.style.color = "white"
-
+        link.style.color = "white"
     }
 
     //Função para recarregar a página após 60 segundos
