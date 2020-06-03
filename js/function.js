@@ -27,4 +27,9 @@ function carregar() {
 
     }
 
+    //Função para recarregar a página após 60 segundos
+    setTimeout(function() {
+        window.location.reload(1);
+    }, 60000)
+
 }
